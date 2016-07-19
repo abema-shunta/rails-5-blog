@@ -1,0 +1,4 @@
+= form_for([ @post, Comment.new], remote: true) do |form|
+  Your Comment
+  = form.text_area :body, size: '50x20', class: "form-control"
+  = form.submit "Post comment", class: "btn btn-primary"
